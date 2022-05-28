@@ -1,0 +1,6 @@
+.detaignore
+.deta
+
+.env
+.vscode
+venv
