@@ -1,4 +1,3 @@
-from fastapi.templating import Jinja2Templates
 import os
 
 if os.environ.get('ENV', None):
@@ -13,4 +12,3 @@ user = {
     'password': os.environ.get('ADMIN_PASSWORD')
 }
 
-templates = Jinja2Templates(directory="dist")

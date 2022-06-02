@@ -9,8 +9,9 @@ from config import API_TOKEN, user
 from schemas import AuthSchema
 
 router = APIRouter()
+
 cache = TTLCache(maxsize=1000, ttl=65)
-print(API_TOKEN)
+
 @router.post('/login/')
 async def login(auth_details: AuthSchema):
     auth_details.username = auth_details.username.strip()
